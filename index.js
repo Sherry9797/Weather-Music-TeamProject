@@ -1,3 +1,6 @@
+
+// These code author by Dandan ZHAO
+
 const apiKey = 'c8725c99582e6b7913b5136a66b58338';
 const city = 'new york';
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
