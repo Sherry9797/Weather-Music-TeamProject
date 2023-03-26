@@ -1,25 +1,47 @@
+<!--  These code author by Dandan ZHAO -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Dandan ZHAO">
-    <meta name="email" content="zhao0260@algonquinlive.com">
-    <title>Weather and Music</title>
-  </head>
-  <body>
-    <div>
-      <h1>Current Weather</h1>
-      <p>Temperature: <span id="temp"></span></p>
-      <p>Weather: <span id="weather"></span></p>
-      <img id="icon" src="" alt="">
-    </div>
-    <div>
-      <h1>Music</h1>
-      <button id="play-music">Play Music</button>
-    </div>
 
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dandan ZHAO,Yiqing Song">
+  <meta name="email" content="zhao0260@algonquinlive.com,song0146@algonquinlive.com">
+  <title>Weather and Music</title>
+</head>
+
+<body>
+  <div>
+
+    <h1>Current Weather</h1>
+    <p>Temperature: <span id="temp"></span></p>
+    <p>Weather: <span id="weather"></span></p>
+    <img id="icon" src="" alt="">
+    <button id="historybutton">save today's weather in history</button>
+    <div id="history"></div>
+    <button id="clear">clear</button>
+  </div>
+  <div>
+    <h1>Music</h1>
+    <button id="play-music">Play Music</button>
+  </div>
+
+
+
+  <!-- These code author by Yiqing Song: -->
+
+  <form id="login">
+    <label for="username">user name</label>
+    <input type="text" id="username" required>
+    <label for="password">password</label>
+    <input type="password" id="password" required>
+    <input type="checkbox" id="check">
+    <label for="remember">remember me</label>
+    <input type="submit" id="remember" value="log in">
+  </form>
+
+  <script src="index.js"></script>
+</body>
+
 </html>
