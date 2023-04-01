@@ -24,6 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
 const $modal = document.getElementById('modal')
 const windowFeatures = 'height=400,width=400,resizable=yes,scrollbars=yes,status=yes'
 
-$modal.addEventListener('click', function (e) {
+$modal.addEventListener('click', () => {
   window.open('login.html', 'LoginWindow', windowFeatures)
 })
