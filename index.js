@@ -1,23 +1,3 @@
-//By Victor-----------------------------------
-//Get all the elements from the sign up form
-signUpForm = document.getElementById("form");
-//get the username input
-signUpUserName = document.getElementById("username");
-//get the password input
-signUpPassword = document.getElementById("password");
-//get the button element
-signUpButton = document.getElementById("submitBTN");
-
-//Add an event listener to the form
-if (localStorage.length === 0) {
-  window.location.replace("Signup.html");
-}
-signUpForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  localStorage.setItem(`${signUpUserName.value}`, `${signUpPassword.value}`);
-  window.location.replace("index.html");
-});
 //-----------------------------------
 // These code author by Dandan ZHAO
 const apiKey = "c8725c99582e6b7913b5136a66b58338";
