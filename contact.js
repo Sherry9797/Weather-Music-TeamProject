@@ -1,4 +1,5 @@
-
+// The following code author by Yiqing Song
+// use localstorage to save data
 const form = document.querySelector('form')
 form.addEventListener('submit', function (e) {
   e.preventDefault()
