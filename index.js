@@ -9,8 +9,8 @@ signUpPassword = document.getElementById("password");
 signUpButton = document.getElementById("submitBTN");
 
 //Add an event listener to the form
-if (localStorage.length > 1) {
-  window.location.replace("index.html");
+if (localStorage.length === 0) {
+  window.location.replace("Signup.html");
 }
 signUpForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -21,7 +21,7 @@ signUpForm.addEventListener("submit", (e) => {
 //-----------------------------------
 // These code author by Dandan ZHAO
 const apiKey = "c8725c99582e6b7913b5136a66b58338";
-const city = "new york";
+const city = "Ottawa";
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
 // Fetch the weather data from the OpenWeatherMap API
