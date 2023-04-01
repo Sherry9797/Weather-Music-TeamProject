@@ -1,116 +1,104 @@
-<!--  These code author by Dandan ZHAO -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Dandan ZHAO,Yiqing Song" />
-    <meta
-      name="email"
-      content="zhao0260@algonquinlive.com,song0146@algonquinlive.com"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=DotGothic16&family=Inter:wght@400;500;700&family=Lobster&family=Monoton&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,500&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;400&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,600;1,700;1,800&family=Syncopate:wght@700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>WeatherTunes</title>
-  </head>
 
-  <body>
-    <div class="weather-app">
-      <div class="hero-section">
-        <nav>
-          <a class="brand-logo" href="index.html">WeatherTunes</a>
-          <div class="nav-list">
-            <a class="tab" href="#">Home</a>
-            <a class="tab" href="#">Gallery</a>
-            <a class="tab" href="#">Contact</a>
-            <a class="tab" href="#">Login in</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Dandan ZHAO ">
+  <meta name="email" content="zhao0260@algonquinlive.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=DotGothic16&family=Inter:wght@400;500;700&family=Lobster&family=Monoton&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,500&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;400&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,600;1,700;1,800&family=Syncopate:wght@700&family=Titan+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>WeatherTunes</title>
+</head>
+
+<body>
+  <div class="weather-app">
+    <div class="hero-section">
+      <nav>
+        <a class="brand-logo" href="index.html">WeatherTunes</a>
+        <div class="nav-list">
+          <a class="tab" href="#">Home</a>
+          <a class="tab" href="Gallery.html">Gallery</a>
+          <a class="tab" href="about us.html">Contact</a>
+          <a class="tab" href="#" id="modal">Login in</a>
+        </div>
+      </nav>
+      <div class="weather-section">
+        <div>
+          <div class="main-weather-section">
+            <div class="weather-icon">
+              <img class="weather-pic" src="img/weather.png" alt="weather" />
+              <div class="temp"></div>
+            </div>
+
+            <div class="main-weather">Broken Clouds</div>
+            <div class="main-city">Ottawa</div>
+
+            <!-- need more info -->
           </div>
-        </nav>
-        <div class="weather-section">
-          <div>
-            <div class="main-weather-section">
-              <div class="weather-icon">
-                <img class="weather-pic" src="img/weather.png" alt="weather" />
-                <div class="temp"></div>
-              </div>
+        </div>
 
-              <div class="main-weather">Broken Clouds</div>
-              <div class="main-city">Ottawa</div>
-
-              <!-- need more info -->
+        <div class="side-weather-section">
+          <div class="side-weather-box background-torronto">
+            <div class="top-weather-box">
+              <div class="side-city">Toronto</div>
+              <div class="side-temp">12&#176;</div>
+            </div>
+            <div class="btm-weather-box">
+              <div class="side-weather">Sunny</div>
+              <div class="side-temp-detail">Higest:21 Lowest:-1</div>
             </div>
           </div>
-
-          <div class="side-weather-section">
-            <div class="side-weather-box background-torronto">
-              <div class="top-weather-box">
-                <div class="side-city">Toronto</div>
-                <div class="side-temp">12&#176;</div>
-              </div>
-              <div class="btm-weather-box">
-                <div class="side-weather">Sunny</div>
-                <div class="side-temp-detail">Higest:21 Lowest:-1</div>
-              </div>
+          <div class="side-weather-box background-vancouver">
+            <div class="top-weather-box">
+              <div class="side-city">Vancouver</div>
+              <div class="side-temp">22&#176;</div>
             </div>
-            <div class="side-weather-box background-vancouver">
-              <div class="top-weather-box">
-                <div class="side-city">Vancouver</div>
-                <div class="side-temp">22&#176;</div>
-              </div>
-              <div class="btm-weather-box">
-                <div class="side-weather">Sunny</div>
-                <div class="side-temp-detail">Higest:21 Lowest:-1</div>
-              </div>
+            <div class="btm-weather-box">
+              <div class="side-weather">Sunny</div>
+              <div class="side-temp-detail">Higest:21 Lowest:-1</div>
             </div>
-            <div class="side-weather-box background-calgary">
-              <div class="top-weather-box">
-                <div class="side-city">Calgary</div>
-                <div class="side-temp">2&#176;</div>
-              </div>
-              <div class="btm-weather-box">
-                <div class="side-weather">Sunny</div>
-                <div class="side-temp-detail">Higest:21 Lowest:-1</div>
-              </div>
+          </div>
+          <div class="side-weather-box background-calgary">
+            <div class="top-weather-box">
+              <div class="side-city">Calgary</div>
+              <div class="side-temp">2&#176;</div>
+            </div>
+            <div class="btm-weather-box">
+              <div class="side-weather">Sunny</div>
+              <div class="side-temp-detail">Higest:21 Lowest:-1</div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <div>
-        <h1>Current Weather</h1>
-        <p>City: <select id="city">
+      <h1>Current Weather</h1>
+      <p>City: <select id="city">
           <option value="Toronto">Toronto</option>
           <option value="Vancouver">Vancouver</option>
           <option value="Ottawa">Ottawa</option>
           <option value="Calgary">Calgary</option>
         </select></p>
-        <p>Temperature: <span id="temp"></span></p>
-        <p>Humidity: <span id="humidity"></span></p>
-        <p>Weather: <span id="weather"></span></p>
-        <img id="icon" src="" alt="">
-      </div>
-      
-      
+      <p>Temperature: <span id="temp"></span></p>
+      <p>Humidity: <span id="humidity"></span></p>
+      <p>Weather: <span id="weather"></span></p>
+      <img id="icon" src="" alt="">
+    </div>
 
-    <!-- These code author by Yiqing Song: -->
 
-     <!-- <form id="login">
-      <label for="username">user name</label>
-      <input type="text" id="username" required />
-      <label for="password">password</label>
-      <input type="password" id="password" required />
-      <input type="checkbox" id="check" />
-      <label for="remember">remember me</label>
-      <input type="submit" id="remember" value="log in" />
-    </form>  -->
+
+
 
     <script src="index.js"></script>
+    <script src="login.js"></script>
     <script src="SignUp.js"></script>
-  </body>
+</body>
+
 </html>
