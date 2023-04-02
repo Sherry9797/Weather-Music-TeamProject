@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+    color: cornflowerblue
+}
+
+form {
+    text-align: center;
+
+
+}
+
+form label,
+input {
+    margin: 20px;
+
+}
+
+form label {
+    color: cornflowerblue;
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+    color: ghostwhite;
+}
+
+a {
+    text-align: center;
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: cyan;
+}
+
+#remember {
+    font-size: 20px;
+}
+
+body {
+    background-image: url('/img/26.jpg');
+    background-repeat: no-repeat;
+    background-size: 2200px 1200px
+}

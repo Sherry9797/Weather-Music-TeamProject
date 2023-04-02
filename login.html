@@ -7,21 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Yiqing Song" />
     <meta name="email" content="song0146@algonquinlive.com" />
+    <link rel="stylesheet" href="login.css">
     <title>Document</title>
 </head>
 
 <body>
 
-
+    <h1>log in</h1>
     <form id="login">
         <label for="username">user name</label>
         <input type="text" id="username" required />
-        <label for="password">password</label>
-        <input type="password" id="password" required />
+        <div>
+            <label for="password">password</label>
+            <input type="password" id="password" required />
+        </div>
         <input type="checkbox" id="check" />
         <label for="remember">remember me</label>
-        <input type="submit" id="remember" value="log in" />
+        <div>
+            <input type="submit" id="remember" value="log in" />
+        </div>
     </form>
+    <p>Don't have an account? <a href="Signup.html">sign up</a></p>
 </body>
 <script src="login.js"></script>
 
