@@ -200,3 +200,77 @@ nav {
     ),
     url(img/city/calgary.jpg);
 }
+/* Victor part */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #003250;
+  border: 2px solid white;
+  height: 200px;
+  background-image: linear-gradient(
+      rgba(36, 35, 35, 0.4),
+      rgba(35, 34, 34, 0.4)
+    ),
+    url(img/rainy.jpg);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+#active1 {
+  display: none;
+}
+
+#parentPlayList {
+  justify-content: center;
+  display: flex;
+}
+#parentPlayList2 {
+  justify-content: center;
+  display: flex;
+}
+#parentPlayList3 {
+  justify-content: center;
+  display: flex;
+}
+
+#welcome {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+#Back,
+#Play,
+#Forward {
+  height: 30px;
+  width: 100px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+#Back:hover,
+#Play:hover,
+#Forward:hover {
+  color: white;
+  background-color: black;
+}
+#songSection1 {
+  color: white;
+  font-size: 20px;
+  margin: 0px 20px;
+}
+
+#songSection2 {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0px 20px;
+}
+
+#songSection2:hover {
+  color: blueviolet;
+}
