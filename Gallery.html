@@ -1,123 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Dandan ZHAO">
-    <meta name="email" content="zhao0260@algonquinlive.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dandan ZHAO" />
+    <meta name="email" content="zhao0260@algonquinlive.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=DotGothic16&family=Inter:wght@400;500;700&family=Lobster&family=Monoton&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,500&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;400&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,600;1,700;1,800&family=Syncopate:wght@700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="gallery.css" />
     <title>Images Gallery</title>
-</head>
+  </head>
 
-<body>
-    <a href="index.html">home</a>
+  <body>
+    <nav>
+      <a class="brand-logo" href="index.html">WeatherTunes</a>
+      <div class="nav-list">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab" href="Gallery.html">Gallery</a>
+        <a class="tab" href="#">Contact</a>
+        <a class="tab" href="#">Login in</a>
+      </div>
+    </nav>
     <div class="slider">
-        <div class="slider-wrapper">
-            <img src="./images /1.jpg" alt=" ">
-
+      <div class="slider-wrapper">
+        <div class="slide-background"></div>
+        <img src="" alt=" " class="galleryimages" />
+        <div class="toggle">
+          <button class="prev">&lt;</button>
+          <button class="next">&gt;</button>
         </div>
-        <div class="slider-footer">
-            <p>some words need to be prepared.</p>
-            <ul class="slider -indicator">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-
-            </ul>
-            <div class="toggle">
-                <button class="prev">&lt;</button>
-                <button class="next">&gt;</button>
-            </div>
+      </div>
+      <div class="slider-footer">
+        <p></p>
+        <div class="slider-indicator">
+          <div class="active dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
+      </div>
     </div>
     <div class="container">
-        <div>
-            <h2>
-                Discover awesome restaurants
-            </h2>
-        </div>
-        <div>
-            <h3>Toronto</h3>
-            <li>Buca: <br> Italian restaurant offers delicious house-made pasta, wood-fired pizza, and a great selection
-                of wines.</li>
-            <li>Lee: <br> Susur Lee’s flagship restaurant offers an eclectic menu of Asian fusion cuisine, with dishes
-                like Singaporean-style slaw and Singaporean-style chili lobster.</li>
-            <li>Canoe:<br> Located on the 54th floor of the TD Bank Tower, this restaurant offers stunning views of the
-                city skyline
-                along with a menu of Canadian cuisine, including dishes like venison and Arctic char.</li>
-            <li>Pai: <br>This popular Thai restaurant serves up delicious dishes like pad Thai and green curry, as well
-                as some
-                lesser-known but equally delicious options like khao soi and laab</li>
-            <li>Richmond Station:<br> This cozy restaurant offers seasonal Canadian cuisine, with a focus on local and
-                sustainable
-                ingredients. Their house-made charcuterie is not to be missed!</li>
-        </div>
+      <div>
+        <h2 class="discover-title">Discover awesome restaurants</h2>
+      </div>
+      <div class="discover-section">
+        <h3 class="city-title">Toronto</h3>
+        <div class="restaurants">
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Buca</div>
+            <div class="restaurant-intro">
+              Italian restaurant offers delicious house-made pasta, wood-fired
+              pizza, and a great selection of wines.
+            </div>
+          </div>
 
-        <div>
-            <h3>Vancouver</h3>
-            <li>Miku: <br>This Japanese restaurant offers delicious sushi and sashimi, as well as a unique style of
-                sushi called
-                aburi, which is lightly seared with a blowtorch for added flavor.</li>
-            <li>Hawksworth:<br> This upscale restaurant offers contemporary Canadian cuisine, with dishes like Pacific
-                halibut and
-                Alberta beef tenderloin.</li>
-            <li>The Fish Counter: <br>This seafood market and restaurant offers sustainable and locally sourced seafood,
-                with
-                options like fish and chips and lobster rolls.</li>
-            <li>MeeT:<br> This vegan restaurant offers delicious plant-based options like burgers, bowls, and poutine.
-            </li>
-            <li>Tojo's: <br>This sushi restaurant is run by Tojo, a legendary chef who is credited with inventing the
-                California
-                roll. Be sure to try the omakase, a chef's choice tasting menu.</li>
-        </div>
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Lee</div>
+            <div class="restaurant-intro">
+              Susur Lee’s flagship restaurant offers an eclectic menu of Asian
+              fusion cuisine, with dishes like Singaporean-style slaw and
+              Singaporean-style chili lobster.
+            </div>
+          </div>
 
-        <div>
-            <h3>Ottawa</h3>
-            <li>Atelier:<br> This unique restaurant offers a multi-course tasting menu that showcases the chef's
-                creativity and
-                culinary skill.</li>
-            <li>Beckta Dining & Wine: <br>This upscale restaurant offers a contemporary Canadian menu, with dishes like
-                Quebec
-                venison and PEI mussels.</li>
-            <li>El Camino:<br> This trendy restaurant offers delicious Mexican-inspired dishes like tacos, ceviche, and
-                grilled
-                octopus.</li>
-            <li>Play Food & Wine: <br>This small plates restaurant offers a wide variety of dishes, with a focus on
-                local and
-                seasonal ingredients.</li>
-            <li>Fauna: <br>This farm-to-table restaurant offers innovative Canadian cuisine, with dishes like roasted
-                parsnip
-                agnolotti and Nova Scotia lobster.</li>
-        </div>
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Canoe</div>
+            <div class="restaurant-intro">
+              Located on the 54th floor of the TD Bank Tower, this restaurant
+              offers stunning views of the city skyline along with a menu of
+              Canadian cuisine, including dishes like venison and Arctic char.
+            </div>
+          </div>
 
-        <div>
-            <h3>Calgary</h3>
-            <li>Model Milk:<br> This trendy restaurant offers modern Canadian cuisine, with dishes like Alberta beef
-                tartare and
-                pork belly.</li>
-            <li>River Café: <br>This beautiful restaurant is located in Prince's Island Park and offers a menu of
-                Canadian cuisine,
-                with dishes like bison carpaccio and wild mushroom risotto.</li>
-            <li>Anju:<br> This Korean-inspired restaurant offers delicious dishes like fried chicken and kimchi stew, as
-                well as a
-                great selection of cocktails.</li>
-            <li>Pigeonhole: <br>This small plates restaurant offers a creative and innovative menu, with dishes like
-                smoked
-                steelhead trout and roasted lamb shoulder.</li>
-            <li>Shokunin: <br>This Japanese restaurant offers delicious sushi, sashimi, and yakitori, as well as a great
-                selection
-                of sake.</li>
-        </div>
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Pai</div>
+            <div class="restaurant-intro">
+              This popular Thai restaurant serves up delicious dishes like pad
+              Thai and green curry, as well as some lesser-known but equally
+              delicious options like khao soi and laab
+            </div>
+          </div>
 
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Richmond Station</div>
+            <div class="restaurant-intro">
+              This cozy restaurant offers seasonal Canadian cuisine, with a
+              focus on local and sustainable ingredients. Their house-made
+              charcuterie is not to be missed!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="discover-section">
+        <h3 class="city-title">Vancouver</h3>
+        <div class="restaurants">
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Miku</div>
+            <div class="restaurant-intro">
+              This Japanese restaurant offers delicious sushi and sashimi, as
+              well as a unique style of sushi called aburi, which is lightly
+              seared with a blowtorch for added flavor.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Hawksworth</div>
+            <div class="restaurant-intro">
+              This upscale restaurant offers contemporary Canadian cuisine, with
+              dishes like Pacific halibut and Alberta beef tenderloin.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">The Fish Counter</div>
+            <div class="restaurant-intro">
+              This seafood market and restaurant offers sustainable and locally
+              sourced seafood, with options like fish and chips and lobster
+              rolls.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">MeeT</div>
+            <div class="restaurant-intro">
+              This vegan restaurant offers delicious plant-based options like
+              burgers, bowls, and poutine.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Tojo's</div>
+            <div class="restaurant-intro">
+              This sushi restaurant is run by Tojo, a legendary chef who is
+              credited with inventing the California roll. Be sure to try the
+              omakase, a chef's choice tasting menu.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="discover-section">
+        <h3 class="city-title">Ottawa</h3>
+        <div class="restaurants">
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Atelier</div>
+            <div class="restaurant-intro">
+              This unique restaurant offers a multi-course tasting menu that
+              showcases the chef's creativity and culinary skill.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Beckta Dining & Wine</div>
+            <div class="restaurant-intro">
+              This upscale restaurant offers contemporary Canadian cuisine, with
+              dishes like Pacific halibut and Alberta beef tenderloin.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">El Camino</div>
+            <div class="restaurant-intro">
+              This trendy restaurant offers delicious Mexican-inspired dishes
+              like tacos, ceviche, and grilled octopus.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Play Food & Wine</div>
+            <div class="restaurant-intro">
+              This small plates restaurant offers a wide variety of dishes, with
+              a focus on local and seasonal ingredients.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Fauna</div>
+            <div class="restaurant-intro">
+              This farm-to-table restaurant offers innovative Canadian cuisine,
+              with dishes like roasted parsnip agnolotti and Nova Scotia
+              lobster.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="discover-section">
+        <h3 class="city-title">Calgary</h3>
+        <div class="restaurants">
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Model Milk</div>
+            <div class="restaurant-intro">
+              This trendy restaurant offers modern Canadian cuisine, with dishes
+              like Alberta beef tartare and pork belly.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">River Café</div>
+            <div class="restaurant-intro">
+              This beautiful restaurant is located in Prince's Island Park and
+              offers a menu of Canadian cuisine, with dishes like bison
+              carpaccio and wild mushroom risotto.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Anju</div>
+            <div class="restaurant-intro">
+              This trendy restaurant offers delicious Mexican-inspired dishes
+              like tacos, ceviche, and grilled octopus.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Pigeonhole</div>
+            <div class="restaurant-intro">
+              This small plates restaurant offers a creative and innovative
+              menu, with dishes like smoked steelhead trout and roasted lamb
+              shoulder.
+            </div>
+          </div>
+
+          <div class="restaurant-card">
+            <img class="restaurant-img" src="/img/restaurant/buca.jpg" alt="" />
+            <div class="restaurant-name">Shokunin</div>
+            <div class="restaurant-intro">
+              This Japanese restaurant offers delicious sushi, sashimi, and
+              yakitori, as well as a great selection of sake.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./gallery.js"></script>
-</body>
-
+  </body>
 </html>
