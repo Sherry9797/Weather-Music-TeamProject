@@ -46,6 +46,7 @@ document.getElementById("city").addEventListener("change", () => {
     })
     .catch((error) => console.log(error));
 });
+
 //By Victor-----------------------------------
 if (localStorage.length > 0) {
   let footer = document.getElementById("active1");
