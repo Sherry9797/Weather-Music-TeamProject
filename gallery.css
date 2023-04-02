@@ -176,3 +176,15 @@ nav {
 .discover-section {
   margin-bottom: 5rem;
 }
+
+/* media query */
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  nav {
+    padding: 2rem;
+  }
+
+  .discover-title {
+    font-size: 2rem;
+  }
+}

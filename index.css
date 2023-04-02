@@ -274,3 +274,80 @@ footer {
 #songSection2:hover {
   color: blueviolet;
 }
+
+/* media queries */
+
+/* below  */
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    height: 125vh;
+  }
+  html {
+    font-size: 50%;
+  }
+
+  nav {
+    padding: 2rem 1rem;
+  }
+
+  /* Adjust the layout for the weather section */
+  .weather-section {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    margin-top: 5rem;
+  }
+  .main-weather-section {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .weather-icon {
+    justify-content: center;
+  }
+  .main-weather,
+  .main-city {
+    text-align: center;
+    margin-left: 0;
+  }
+  .temp {
+    font-size: 6rem;
+  }
+
+  .side-weather-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-weather-box {
+    width: 100%;
+  }
+  .top-weather-box,
+  .btm-weather-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-temp-detail {
+    margin-top: 0.5rem;
+  }
+}
+
+/* above */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+  nav {
+    padding: 2rem 6rem;
+  }
+}
+
+/* above */
+@media only screen and (min-width: 1025px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  nav {
+    padding: 5rem 12rem;
+  }
+}

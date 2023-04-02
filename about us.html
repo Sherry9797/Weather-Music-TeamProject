@@ -1,54 +1,76 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Dandan ZHAO" />
+    <meta name="email" content="zhao0260@algonquinlive.com" />
+    <link rel="stylesheet" href="contactus.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=DotGothic16&family=Inter:wght@400;500;700&family=Lobster&family=Monoton&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,500&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;400&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,600;1,700;1,800&family=Syncopate:wght@700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Dandan ZHAO">
-  <meta name="email" content="zhao0260@algonquinlive.com">
-  <title>Contact Us</title>
-</head>
+  <body>
+    <nav>
+      <a class="brand-logo" href="index.html">WeatherTunes</a>
+      <div class="nav-list">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab" href="Gallery.html">Gallery</a>
+        <a class="tab" href="#">Contact</a>
+        <a class="tab" href="#">Login in</a>
+      </div>
+    </nav>
+    <form action="submit.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="40"
+        required
+      ></textarea
+      ><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
 
-<body>
-  <h1>Contact Us</h1>
-  <a href="index.html">home</a>
-  <form action="submit.php" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
-    <input type="submit" value="Submit">
-  </form>
+    <div>
+      <h2>Who Are We</h2>
+      <p>
+        At our website, we are passionate about helping people make the most of
+        their time in the city. Our team consists of local experts who are
+        dedicated to providing the best possible recommendations for weather,
+        music, and restaurants in the city. We understand that every person has
+        different tastes and preferences, and we strive to provide a diverse
+        range of options that cater to everyone's needs.
 
-  <div>
-    <h2>Who Are We</h2>
-    <p>
-      At our website, we are passionate about helping people make the most of their time in the city. Our team consists
-      of local experts who are dedicated to providing the best possible recommendations for weather, music, and
-      restaurants in the city. We understand that every person has different tastes and preferences, and we strive to
-      provide a diverse range of options that cater to everyone's needs.
+        <br />Our website is designed to be user-friendly and accessible to all.
+        We are committed to providing accurate and up-to-date information, and
+        we take great pride in our attention to detail. We are constantly
+        updating our content to ensure that our users have the most relevant and
+        timely information available.
 
-      <br>Our website is designed to be user-friendly and accessible to all. We are committed to providing accurate and
-      up-to-date information, and we take great pride in our attention to detail. We are constantly updating our content
-      to ensure that our users have the most relevant and timely information available.
+        <br />At our website, we believe in the power of community. We welcome
+        feedback and suggestions from our users and are always looking for ways
+        to improve our service. We strive to create a positive and inclusive
+        environment where everyone feels welcome and valued.
 
-      <br>At our website, we believe in the power of community. We welcome feedback and suggestions from our users and
-      are always looking for ways to improve our service. We strive to create a positive and inclusive environment where
-      everyone feels welcome and valued.
+        <br />Thank you for choosing our website as your go-to resource for all
+        things weather, music, and restaurant-related in the city. We look
+        forward to continuing to serve you and helping you make the most of your
+        time in the city!
+      </p>
+    </div>
+  </body>
 
-      <br>Thank you for choosing our website as your go-to resource for all things weather, music, and
-      restaurant-related in the city. We look forward to continuing to serve you and helping you make the most of your
-      time in the city!
-    </p>
-  </div>
-
-
-
-</body>
-
-<script src="contact.js"></script>
-
+  <script src="contact.js"></script>
 </html>
