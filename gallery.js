@@ -1,12 +1,12 @@
 //  These code author by Dandan ZHAO
 const images = [
-  { url: "/img/gallery/2.jpg", title: "city2" },
-  { url: "/img/gallery/3.jpg", title: "city3" },
-  { url: "/img/gallery/4.jpg", title: "city4" },
-  { url: "/img/gallery/5.jpg", title: "city5" },
-  { url: "/img/gallery/6.jpg", title: "city6" },
-  { url: "/img/gallery/7.jpg", title: "city7" },
-  { url: "/img/gallery/8.jpg", title: "city8" },
+  { url: "/img/2.jpg", title: "Manhattan" },
+  { url: "/img/3.jpg", title: "New York" },
+  { url: "/img/4.jpg", title: "Seattle" },
+  { url: "/img/5.jpg", title: "Berlin" },
+  { url: "/img/6.jpg", title: "London" },
+  { url: "/img/7.jpg", title: "Florence" },
+  { url: "/img/8.jpg", title: "Venice" },
 ];
 
 const next = document.querySelector(".next");
