@@ -41,7 +41,7 @@ function toggle() {
     .querySelector(".slider-indicator .active")
     .classList.remove("active");
   document
-    .querySelector(`.slider-indicator li:nth-child(${i + 1})`)
+    .querySelector(`.slider-indicator div:nth-child(${i + 1})`)
     .classList.add("active");
 }
 
