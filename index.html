@@ -33,11 +33,11 @@
         <div>
           <div class="main-weather-section">
             <div class="weather-icon">
-              <img class="weather-pic" src="img/weather.png" alt="weather" />
-              <div class="temp"></div>
+              <img class="weather-pic"  alt="weather" />
+              <div class="temp" id="Ottawatemp2"></div>
             </div>
 
-            <div class="main-weather">Broken Clouds</div>
+            <div class="main-weather" id="main-weather2">Broken Clouds</div>
             <div class="main-city">Ottawa</div>
 
             <!-- need more info -->
@@ -48,67 +48,78 @@
           <div class="side-weather-box background-torronto">
             <div class="top-weather-box">
               <div class="side-city">Toronto</div>
-              <div class="side-temp">12&#176;</div>
+              <div class="side-temp"></div>
             </div>
             <div class="btm-weather-box">
-              <div class="side-weather">Sunny</div>
-              <div class="side-temp-detail">Higest:21 Lowest:-1</div>
+              <div class="side-weather"></div>
+              <div class="side-temp-detail"></div>
             </div>
           </div>
           <div class="side-weather-box background-vancouver">
             <div class="top-weather-box">
-              <div class="side-city">Vancouver</div>
-              <div class="side-temp">22&#176;</div>
+              <div class="side-city" >Vancouver</div>
+              <div class="side-temp" id="side-temp2"></div>
             </div>
             <div class="btm-weather-box">
-              <div class="side-weather">Sunny</div>
-              <div class="side-temp-detail">Higest:21 Lowest:-1</div>
+              <div class="side-weather" id="side-weather2">S</div>
+              <div class="side-temp-detail" id="side-temp-detail2"></div>
             </div>
           </div>
           <div class="side-weather-box background-calgary">
             <div class="top-weather-box">
               <div class="side-city">Calgary</div>
-              <div class="side-temp">2&#176;</div>
+              <div class="side-temp" id="side-temp3">2&#176;</div>
             </div>
             <div class="btm-weather-box">
-              <div class="side-weather">Sunny</div>
-              <div class="side-temp-detail">Higest:21 Lowest:-1</div>
+              <div class="side-weather" id="side-weather3"></div>
+              <div class="side-temp-detail" id="side-temp-detail3"></div>
             </div>
           </div>
         </div>
+       
       </div>
+<!-- Weather api -->
+      <div class="apiSectiionV">
+        <h1>Current Weather</h1>
+        <form id="weatherLogic">
+          <p>City: <select id="city">
+              <option value="Toronto">Toronto</option>
+              <option value="Vancouver">Vancouver</option>
+              <option value="Ottawa">Ottawa</option>
+              <option value="Calgary">Calgary</option>
+            </select></p>
+          <img id="icon" src="" alt="">
+          <button type="submit" id="apiBTN">Get Weather</button>
 
+        </form>
+        <div class="weatherInfoSection">
+          <p>Temperature: <span id="temp"></span></p>
+          <p>Humidity: <span id="humidity"></span></p>
+          <p>Weather: <span id="weather"></span></p>
+        </div>
+      </div>
+    
+<!-- Weather api -->
+<footer id="active1">
+ 
+  <section id="parentPlayList1">
+    <h1 id="welcome">test
+    </h1>
+  </section>
+  <section id="parentPlayList2">
+    <button id="Play">Play</button>
+    <button id="Forward">Forward</button>
+  </section>
+  <section id="parentPlayList3">
+    <p id="songSection1"> </p> 
+    <a href="lol" id="songSection2"></a>
+  </section>
+</footer>
     </div>
 
-    <div>
-      <h1>Current Weather</h1>
-      <p>City: <select id="city">
-          <option value="Toronto">Toronto</option>
-          <option value="Vancouver">Vancouver</option>
-          <option value="Ottawa">Ottawa</option>
-          <option value="Calgary">Calgary</option>
-        </select></p>
-      <p>Temperature: <span id="temp"></span></p>
-      <p>Humidity: <span id="humidity"></span></p>
-      <p>Weather: <span id="weather"></span></p>
-      <img id="icon" src="" alt="">
-    </div>
 
 
-    <footer id="active1">
-      <section id="parentPlayList1">
-        <h1 id="welcome">test
-        </h1>
-      </section>
-      <section id="parentPlayList2">
-        <button id="Back">Back</button>
-        <button id="Play">Play</button>
-        <button id="Forward">Forward</button>
-      </section>
-      <section id="parentPlayList3">
-        <p id="songSection1">test<a href="lol" id="songSection2">test1</a></p>
-      </section>
-    </footer>
+   
     <script src="SignUp.js"></script>
     <script src="index.js"></script>
     <script src="login.js"></script>
