@@ -65,6 +65,8 @@ for (let x in localStorage) {
   }
 }
 welcomeText.textContent = `Welcome ${userName}! Your playlist awaits`;
+
+// These code authod by Victor and Dandan ZHAO
 // Get the api form
 let formAPI = document.getElementById("weatherLogic");
 let temp = document.getElementById("temp");
