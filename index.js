@@ -47,7 +47,7 @@
 //     .catch((error) => console.log(error));
 // });
 
-//By Victor-----------------------------------
+//By Victor but please give some credit to  Dandan ZHAO-----------------------------------
 if (localStorage.length > 0) {
   let footer = document.getElementById("active1");
   footer.style.display = "flex";
@@ -73,8 +73,69 @@ let temp = document.getElementById("temp");
 let humidity = document.getElementById("humidity");
 let weather = document.getElementById("weather");
 let cityOption = document.getElementById("city");
+let playButton = document.getElementById("parentPlayList2");
+
 formAPI.addEventListener("submit", (e) => {
+  playButton.innerHTML = `<div></div>`;
   e.preventDefault();
+  if (cityOption.value === "Toronto") {
+    playButton.insertAdjacentHTML(
+      "afterbegin",
+      `<div  style="display: flex; align-content: center; justify-content: center;">
+    <iframe
+      src="https://open.spotify.com/embed/artist/3TVXtAsR1Inumwj472S9r4?si=mydjbKwAQb-WP3OI2Hlurg"
+      width="300"
+      height="80"
+      frameborder="0"
+      allowtransparency="true"
+      allow="encrypted-media"
+    ></iframe>
+  </div>`
+    );
+  }
+  if (cityOption.value === "Vancouver") {
+    playButton.insertAdjacentHTML(
+      "afterbegin",
+      `<div style="display: flex; align-content: center; justify-content: center;">
+      <iframe 
+      src="https://open.spotify.com/embed/artist/3Ofw9tqhmFrQV7kVmQsOl1?si=B4hIMVw6TAKR031gXU-j2Q" 
+      width="300" 
+      height="80"  
+      frameborder="0" 
+      allowtransparency="true" 
+      allow="encrypted-media"
+      ></iframe>
+      </div>`
+    );
+  } else if (cityOption.value === "Calgary") {
+    playButton.insertAdjacentHTML(
+      "afterbegin",
+      `<div style="display: flex; align-content: center; justify-content: center;">
+      <iframe
+        src="https://open.spotify.com/embed/artist/209owUSIqCjOCdahzFWdl8?si=JBotvA2-QY-6OxgeNR0ilA"
+        width="300"
+        height="80"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      ></iframe>
+    </div>`
+    );
+  } else if (cityOption.value === "Ottawa") {
+    playButton.insertAdjacentHTML(
+      "afterbegin",
+      `<div style="display: flex; align-content: center; justify-content: center;">
+        <iframe
+          src="https://open.spotify.com/embed/artist/2y246nnP9pQT0E6v3ZMMOO?si=v5DIln4oQXSOBoAKv7oheA"
+          width="300"
+          height="80"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>`
+    );
+  }
   apiKeyV = "605c1e9bc5c9408cad4111856223108";
   let cityName = cityOption.value;
   apiURLV = `https://api.weatherapi.com/v1/current.json?key=${apiKeyV}&q=${cityName}&aqi=no`;
@@ -143,32 +204,3 @@ fetch(
     OttawaTemp.innerText = data.current.temp_c + " °C";
     OttawaMainWeather.innerText = data.current.condition.text;
   });
-// Playlist handler
-let playListSong = [
-  { name: "drake", link: "https://www.youtube.com/@DrakeOfficial" },
-  {
-    name: "Temps",
-    link: "https://www.youtube.com/channel/UCI0NOexDPvBgoV7pFOkaWww",
-  },
-  {
-    name: "Josh Ramsay",
-    link: "https://www.youtube.com/@JoshRamsayOfficial",
-  },
-];
-let ind = 0;
-artistName.innerText = playListSong[ind].name;
-songLink.innerText = playListSong[ind].link;
-Play.addEventListener("click", () => {
-  window.location.replace(playListSong[ind].link);
-});
-Forward.addEventListener("click", () => {
-  if (ind === playListSong.length - 1) {
-    ind = 0;
-    artistName.innerText = playListSong[ind].name;
-    songLink.innerText = playListSong[ind].link;
-  } else {
-    ind++;
-    artistName.innerText = playListSong[ind].name;
-    songLink.innerText = playListSong[ind].link;
-  }
-});

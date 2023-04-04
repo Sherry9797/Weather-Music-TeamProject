@@ -209,13 +209,6 @@ footer {
   background-color: black;
   margin-bottom: 60px;
   height: 200px;
-  /* background-image: linear-gradient(
-      rgba(36, 35, 35, 0.4),
-      rgba(35, 34, 34, 0.4)
-    ),
-    url(img/rainy.jpg);
-  background-size: cover;
-  background-position: center; */
 }
 #active1 {
   display: none;
@@ -226,10 +219,6 @@ footer {
   display: flex;
 }
 #parentPlayList2 {
-  justify-content: center;
-  display: flex;
-}
-#parentPlayList3 {
   justify-content: center;
   display: flex;
 }
@@ -364,6 +353,8 @@ footer {
   justify-content: center;
   align-items: center;
   display: flex;
+  background-color: black;
+  width: 100%;
 }
 
 .weatherInfoSection p {
