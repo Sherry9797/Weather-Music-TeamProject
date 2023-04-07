@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Yiqing Song" />
     <meta name="email" content="song0146@algonquinlive.com" />
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav>
+      <a class="brand-logo" href="index.html">WeatherTunes</a>
+      <div class="nav-list">
+        <a class="tab" href="#">Home</a>
+        <a class="tab" href="Gallery.html">Gallery</a>
+        <a class="tab" href="about us.html">Contact</a>
+        <a class="tab" href="login.html" id="modal">Login in</a>
+        <a class="tab" href="Signup.html" id="modal">Sign up</a>
+      </div>
+    </nav>
 
     <h1>log in</h1>
     <form id="login">
-        <label for="username">user name</label>
-        <input type="text" id="username" required />
-        <div>
-            <label for="password">password</label>
-            <input type="password" id="password" required />
-        </div>
-        <input type="checkbox" id="check" checked />
-        <label for="remember">remember me</label>
-        <div>
-            <input type="submit" id="remember" value="log in" checked />
-
-        </div>
+      <label for="username">user name</label>
+      <input type="text" id="username" required />
+      <div>
+        <label for="password">password</label>
+        <input type="password" id="password" required />
+      </div>
+      <input type="checkbox" id="check" checked />
+      <label for="remember">remember me</label>
+      <div>
+        <input type="submit" id="remember" value="log in" checked />
+      </div>
     </form>
     <p>Don't have an account? <a href="Signup.html">sign up</a></p>
-</body>
-<script src="login.js"></script>
-
+  </body>
+  <script src="login.js"></script>
 </html>
