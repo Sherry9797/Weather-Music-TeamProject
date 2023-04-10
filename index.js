@@ -1,5 +1,5 @@
 
-// These code author by Victor and Dandan ZHAO, Dandan ZHAO did weather api, Victor based these code updated them to dynamically diplay by location.
+// These code author by Victor and Dandan ZHAO, Dandan ZHAO did weather api, Victor base these code updated them to dynamically diplay by location.
 // Get the api form
 let formAPI = document.getElementById("weatherLogic");
 let temp = document.getElementById("temp");
