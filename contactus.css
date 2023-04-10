@@ -1,3 +1,5 @@
+/* the whole page is written by Lang Gui */
+
 * {
   margin: 0;
   padding: 0;
@@ -49,4 +51,229 @@ nav {
   padding-right: 4rem;
   text-decoration: none;
   color: black;
+}
+
+/* forms */
+.container-cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 15px;
+  background-color: antiquewhite;
+  max-width: 120rem;
+  margin: 5rem 10rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      rgba(145, 122, 96, 0.4),
+      rgba(98, 92, 85, 0.4)
+    ),
+    url("img/forms.jpg");
+  background-size: cover;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.cta-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+.cta-text-box {
+  padding: 3rem 5rem;
+  color: #333;
+}
+.cta-heading {
+  font-size: 3.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+.cta-form input,
+.cta-form select,
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 6px;
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-btn {
+  border: none;
+  background-color: #4e8397;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #fff4e6;
+  align-self: end;
+  padding: 1rem 0;
+}
+
+.cta-btn:hover {
+  background-color: #b39cd0;
+  color: white;
+}
+
+.message {
+  margin-top: 2rem;
+}
+
+textarea {
+  margin-bottom: 2rem;
+}
+
+/* who we are */
+.feature-img {
+  max-width: 80%;
+  /* box-shadow: 12px 12px 15px rgba(35, 34, 34, 0.3); */
+  border-radius: 25px;
+}
+
+.feature-section {
+  max-width: 130rem;
+  margin: 2rem auto 10rem auto;
+}
+
+.feature-box-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12rem;
+  margin-bottom: 15rem;
+}
+
+.number-heading {
+  font-size: 7rem;
+  color: #4e8397;
+}
+.heading-2 {
+  font-size: 4rem;
+
+  margin-top: 0;
+  position: relative;
+  color: #555;
+}
+
+.heading-3 {
+  font-size: 3rem;
+
+  margin-top: 0;
+  position: relative;
+  color: #555;
+}
+
+.feature-text {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.small-title {
+  text-transform: uppercase;
+  color: #4e8397;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.feature-big-title {
+  margin-top: 6rem;
+  margin-bottom: 7rem;
+}
+
+.brand-in-title {
+  color: #4e8397;
+  font-weight: 500;
+  font-family: "Lobster", sans-serif;
+  font-size: larger;
+}
+
+.number-heading::before {
+  content: " ";
+  width: 4%;
+  padding-bottom: 4%;
+  background-color: #d3ecf7;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.icon {
+  stroke: #ff9671;
+  width: 5rem;
+  height: 5rem;
+}
+.icon-heading {
+  display: flex;
+
+  align-items: center;
+  gap: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .brand-logo {
+    padding: 0;
+  }
+
+  /* Forms */
+  .container-cta {
+    grid-template-columns: 1fr;
+    margin: 5rem 2rem;
+  }
+
+  .cta-img-box {
+    display: none;
+  }
+
+  /* Who We Are */
+  .feature-section {
+    margin: 2rem 2rem 10rem 2rem;
+  }
+
+  .feature-box-1 {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-bottom: 8rem;
+  }
+
+  .heading-2,
+  .heading-3 {
+    font-size: 3rem;
+  }
+
+  .feature-text {
+    font-size: 1.6rem;
+  }
 }

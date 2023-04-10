@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Yiqing Song" />
     <meta name="email" content="song0146@algonquinlive.com" />
-    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=DotGothic16&family=Inter:wght@400;500;700&family=Lobster&family=Monoton&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,500&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;400&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,600;1,700;1,800&family=Syncopate:wght@700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <nav>
+      <a class="brand-logo" href="index.html">WeatherTunes</a>
+      <div class="nav-list">
+        <a class="tab" href="index.html">Home</a>
+        <a class="tab" href="Gallery.html">Gallery</a>
+        <a class="tab" href="about us.html">Contact</a>
+        <a class="tab" href="login.html">Login in</a>
+        <a class="tab" href="Signup.html" id="modal">Sign up</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="login-in-section">
+        <h1 class="brand-logo-1">Weathertunes</h1>
+        <form id="login">
+          <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" required />
+          </div>
 
-    <h1>log in</h1>
-    <form id="login">
-        <label for="username">user name</label>
-        <input type="text" id="username" required />
-        <div>
-            <label for="password">password</label>
+          <div>
+            <label for="password">Password</label>
             <input type="password" id="password" required />
-        </div>
-        <input type="checkbox" id="check" checked />
-        <label for="remember">remember me</label>
-        <div>
-            <input type="submit" id="remember" value="log in" checked />
-
-        </div>
-    </form>
-    <p>Don't have an account? <a href="Signup.html">sign up</a></p>
-</body>
-<script src="login.js"></script>
-
+          </div>
+          <div class="remember-section">
+            <input type="checkbox" id="check" checked />
+            <label for="remember">Remember me</label>
+          </div>
+          <div>
+            <input type="submit" id="remember" value="Log in" checked />
+          </div>
+        </form>
+        <p class="sign-up">
+          Don't have an account?
+          <a id="sign-link" href="Signup.html">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="login.js"></script>
 </html>

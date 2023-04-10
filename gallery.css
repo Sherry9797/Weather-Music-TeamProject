@@ -1,3 +1,5 @@
+/* the whole page is written by Lang Gui */
+
 /* gallery page */
 * {
   margin: 0;
@@ -187,4 +189,70 @@ nav {
   .discover-title {
     font-size: 2rem;
   }
+}
+
+.heading-2 {
+  font-size: 4rem;
+
+  margin-top: 0;
+  position: relative;
+  color: black;
+}
+
+.small-title {
+  text-transform: uppercase;
+  color: #4e8397;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.feature-big-title {
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.brand-in-title {
+  color: #4e8397;
+  font-weight: 500;
+  font-family: "Lobster", sans-serif;
+  font-size: larger;
+}
+/* dark mode */
+#dark-mode-button {
+  border: none;
+  background-color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 35px;
+  cursor: pointer;
+  color: #fff4e6;
+  align-self: end;
+  padding: 0.3rem 1rem;
+  margin-left: 50rem;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode nav .tab {
+  color: white;
+}
+
+body.dark-mode nav .brand-logo {
+  color: white;
+}
+
+body.dark-mode .feature-big-title .heading-2 {
+  color: white;
+}
+
+body.dark-mode .slider-footer .city-display {
+  color: black;
+}
+
+.dark-mode-btn.light {
+  background-color: white;
+  color: black;
 }

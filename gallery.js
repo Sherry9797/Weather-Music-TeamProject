@@ -60,3 +60,21 @@ slider.addEventListener("mouseleave", function () {
     next.click();
   }, 1000);
 });
+
+// authored by Lang Gui
+
+const darkModeBtn = document.getElementById("dark-mode-button");
+const body = document.querySelector("body");
+
+darkModeBtn.addEventListener("click", () => {
+  body.classList.toggle("dark-mode");
+  if (body.classList.contains("dark-mode")) {
+    darkModeBtn.textContent = "Light Mode";
+    darkModeBtn.style.backgroundColor = "white";
+    darkModeBtn.style.color = "black";
+  } else {
+    darkModeBtn.textContent = "Dark Mode";
+    darkModeBtn.style.backgroundColor = "";
+    darkModeBtn.style.color = "";
+  }
+});
