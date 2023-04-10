@@ -218,3 +218,41 @@ nav {
   font-family: "Lobster", sans-serif;
   font-size: larger;
 }
+/* dark mode */
+#dark-mode-button {
+  border: none;
+  background-color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 35px;
+  cursor: pointer;
+  color: #fff4e6;
+  align-self: end;
+  padding: 0.3rem 1rem;
+  margin-left: 50rem;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode nav .tab {
+  color: white;
+}
+
+body.dark-mode nav .brand-logo {
+  color: white;
+}
+
+body.dark-mode .feature-big-title .heading-2 {
+  color: white;
+}
+
+body.dark-mode .slider-footer .city-display {
+  color: black;
+}
+
+.dark-mode-btn.light {
+  background-color: white;
+  color: black;
+}
