@@ -126,6 +126,12 @@ textarea {
   align-self: end;
   padding: 1rem 0;
 }
+
+.cta-btn:hover {
+  background-color: #b39cd0;
+  color: white;
+}
+
 .message {
   margin-top: 2rem;
 }

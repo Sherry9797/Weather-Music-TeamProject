@@ -6,13 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=DotGothic16&family=Inter:wght@400;500;700&family=Lobster&family=Monoton&family=Poppins:ital,wght@0,200;0,300;0,500;0,600;1,500&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;400&family=Rubik:ital,wght@0,400;0,500;0,700;0,900;1,600;1,700;1,800&family=Syncopate:wght@700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Signup.css" />
   </head>
   <main>
     <nav>
       <a class="brand-logo" href="index.html">WeatherTunes</a>
       <div class="nav-list">
-        <a class="tab" href="#">Home</a>
+        <a class="tab" href="index.html">Home</a>
         <a class="tab" href="Gallery.html">Gallery</a>
         <a class="tab" href="about us.html">Contact</a>
         <a class="tab" href="login.html" id="modal">Login in</a>
@@ -21,14 +27,17 @@
     </nav>
     <section id="formContainer">
       <form id="form">
-        <h1 id="signInText">Sign up</h1>
-        <label class="labelText">Enter username</label>
-        <input type="text" id="username" required />
-        <br />
-        <br />
-        <label class="labelText">Enter password</label>
-        <input type="password" id="password" required />
-        <br />
+        <h1 id="signInText">Join Us Now</h1>
+        <div>
+          <label class="labelText">Username</label> <br />
+          <input type="text" id="username" required />
+        </div>
+
+        <div>
+          <label class="labelText">Password</label><br />
+          <input type="password" id="password" required />
+        </div>
+
         <button type="submit" id="submitBTN">Sign up</button>
       </form>
     </section>

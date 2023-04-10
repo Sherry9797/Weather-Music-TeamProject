@@ -9,6 +9,7 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
   color: #fff;
+  background-color: black;
 }
 
 .weather-app {
@@ -219,14 +220,17 @@ footer {
   display: flex;
 }
 #parentPlayList2 {
-  justify-content: center;
+  justify-content: start;
   display: flex;
+  margin-left: 4rem;
 }
 
 #welcome {
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: beige;
   font-size: 30px;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
 }
 #Play,
 #Forward {
@@ -314,6 +318,10 @@ footer {
   .side-temp-detail {
     margin-top: 0.5rem;
   }
+
+  .feature-big-title {
+    margin-top: 6rem;
+  }
 }
 
 /* above */
@@ -339,15 +347,49 @@ footer {
 }
 /* Victor's code */
 .apiSectiionV {
-  margin-top: 40px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
 }
+#city {
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 6px;
+  margin-left: 1rem;
+}
+
 #apiBTN {
-  margin-top: 20px;
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+
+  border: none;
+  background-color: #4e8397;
+
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff4e6;
+  width: 250px;
+  border-radius: 2rem;
+  padding: 1rem 0;
 }
+
+.music-section {
+  color: beige;
+  background-color: black;
+}
+
+.step {
+  font-size: 2.4rem;
+  padding: 1rem;
+}
+#apiBTN:hover {
+  background-color: #b39cd0;
+  color: white;
+}
+
 .weatherInfoSection {
   margin-top: 40px;
   justify-content: center;
@@ -360,4 +402,40 @@ footer {
 .weatherInfoSection p {
   font-size: 20px;
   margin: 0px 20px;
+}
+.parentPlayList1 {
+  text-align: left;
+}
+.parentPlayList2 {
+  display: flex;
+}
+
+/* feature title */
+.heading-2 {
+  font-size: 4rem;
+
+  margin-top: 0;
+  position: relative;
+  color: beige;
+}
+
+.small-title {
+  text-transform: uppercase;
+  color: #4e8397;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.feature-big-title {
+  margin-top: 6rem;
+  margin-bottom: 7rem;
+  margin-left: 4rem;
+}
+
+.brand-in-title {
+  color: #4e8397;
+  font-weight: 500;
+  font-family: "Lobster", sans-serif;
+  font-size: larger;
 }

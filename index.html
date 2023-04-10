@@ -25,8 +25,8 @@
           <a class="tab" href="#">Home</a>
           <a class="tab" href="Gallery.html">Gallery</a>
           <a class="tab" href="about us.html">Contact</a>
-          <a class="tab" href="login.html" id="modal">Login in</a>
-          <a class="tab" href="Signup.html" id="modal">Sign up</a>
+          <a class="tab" href="login.html" >Login in</a>
+          <a class="tab" href="Signup.html" >Sign up</a>
         </div>
       </nav>
       <div class="weather-section">
@@ -78,25 +78,38 @@
         </div>
        
       </div>
+      </div>
+      <div class='music-section'>
+
+      
+      <div class="feature-big-title">
+        <p class="small-title">Get music </p>
+        <h2 class="heading-2">
+          Sign up 
+           and get your customized music!
+          
+        </h2>
+      </div>
 <!-- Weather api -->
       <div class="apiSectiionV">
-        <h1>Current Weather</h1>
         <form id="weatherLogic">
-          <p>City: <select id="city">
+          <div class='step'>Step One: Pick a city</div>
+          <div> <select id="city">
               <option value="Toronto">Toronto</option>
               <option value="Vancouver">Vancouver</option>
               <option value="Ottawa">Ottawa</option>
               <option value="Calgary">Calgary</option>
-            </select></p>
+            </select></div>
           <img id="icon" src="" alt="">
-          <button type="submit" id="apiBTN">Get Weather</button>
+          <div class='step'>Step Two: Hit the button and get music!</div>
+          <button type="submit" id="apiBTN">Get Music</button>
 
         </form>
-        <div class="weatherInfoSection">
+        <!-- <div class="weatherInfoSection">
           <p>Temperature: <span id="temp"></span></p>
           <p>Humidity: <span id="humidity"></span></p>
           <p>Weather: <span id="weather"></span></p>
-        </div>
+        </div> -->
       </div>
     
 <!-- Weather api -->
@@ -107,6 +120,7 @@
   </section>
   <section id="parentPlayList2">
   </section>
+  </div>
 
 
 
