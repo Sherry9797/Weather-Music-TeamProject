@@ -1,4 +1,3 @@
-
 // These code author by Victor and Dandan ZHAO, Dandan ZHAO did weather api, Victor base these code updated them to dynamically diplay by location.
 // Get the api form
 let formAPI = document.getElementById("weatherLogic");
@@ -72,12 +71,10 @@ formAPI.addEventListener("submit", (e) => {
   apiKeyV = "605c1e9bc5c9408cad4111856223108";
   let cityName = cityOption.value;
   apiURLV = `https://api.weatherapi.com/v1/current.json?key=${apiKeyV}&q=${cityName}&aqi=no`;
-  console.log(cityOption.value);
 
   fetch(apiURLV)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       temp.innerText = data.current.temp_c + " °C";
       humidity.innerText = data.current.humidity;
       weather.innerText = data.current.condition.text;
@@ -108,7 +105,6 @@ function fillDate(cityValue, cityTemp, cityWeather, cityDetails) {
   fetch(apiURLV)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       cityTemp.innerText = data.current.temp_c + " °C";
       cityWeather.innerText = data.current.condition.text;
       cityDetails.innerText = "Feels like " + data.current.feelslike_c + " °C";
@@ -123,24 +119,40 @@ fillDate(
 );
 fillDate(CalgaryName, CalgaryTemp, CalgaryWeather, CalgaryWeatherDetails);
 // Change the infor from the top where its says Ottawa
+
+//Get the location of the user
+
 OttawaIMG = document.getElementsByClassName("weather-pic")[0];
 OttawaTemp = document.getElementById("Ottawatemp2");
 OttawaMainWeather = document.getElementById("main-weather2");
-fetch(
-  "https://api.weatherapi.com/v1/current.json?key=605c1e9bc5c9408cad4111856223108&q=Ottawa&aqi=no"
-)
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-    console.log("from bottom");
-    OttawaIMG.setAttribute("src", data.current.condition.icon);
-    OttawaTemp.innerText = data.current.temp_c + " °C";
-    OttawaMainWeather.innerText = data.current.condition.text;
-  });
+let currentCityName = document.getElementsByClassName("main-city")[0];
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(displayPosition);
+} else {
+  alert("You selected not to shjare your location");
+}
 
+function displayPosition(p) {
+  console.log(p.coords.latitude);
+  console.log(p.coords.longitude);
+  locationURLLive = `https://us1.locationiq.com/v1/reverse?key=pk.6483a3886385b42a2fd214994041ae8c&lat=${p.coords.latitude}&lon=${p.coords.longitude}&format=json`;
+  fetch(locationURLLive)
+    .then((res) => res.json())
+    .then((data) => {
+      currentCityName.textContent = `Your city is ${data.address.city}`;
+      fetch(
+        `https://api.weatherapi.com/v1/current.json?key=605c1e9bc5c9408cad4111856223108&q=${data.address.city}&aqi=no`
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          OttawaIMG.setAttribute("src", data.current.condition.icon);
+          OttawaTemp.innerText = data.current.temp_c + " °C";
+          OttawaMainWeather.innerText = data.current.condition.text;
+        });
+    });
+}
 
-
-//By Victor 
+//By Victor
 if (localStorage.length > 0) {
   let footer = document.getElementById("active1");
   footer.style.display = "flex";
