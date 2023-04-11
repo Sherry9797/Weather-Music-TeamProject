@@ -49,7 +49,7 @@ let timerId = setInterval(function () {
   next.click();
 }, 1000);
 
-const slider = document.querySelector(".slider");
+const slider = document.querySelector(".slider-wrapper");
 slider.addEventListener("mouseenter", function () {
   clearInterval(timerId);
 });
@@ -61,7 +61,7 @@ slider.addEventListener("mouseleave", function () {
   }, 1000);
 });
 
-// authored by Lang Gui
+// following authored by Lang Gui
 
 const darkModeBtn = document.getElementById("dark-mode-button");
 const body = document.querySelector("body");
