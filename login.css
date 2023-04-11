@@ -90,7 +90,7 @@ label {
   margin-bottom: 0.6rem;
 }
 input {
-  width: 100%;
+  width: 90%;
   padding: 1.2rem;
   font-size: 1.4rem;
   font-family: inherit;
@@ -132,7 +132,6 @@ input {
 }
 
 #remember {
-  font-size: 1.4rem;
   border: none;
   background-color: #4e8397;
   font-size: 2rem;
@@ -146,4 +145,20 @@ input {
 #remember:hover {
   background-color: #b39cd0;
   color: white;
+}
+
+/* media query */
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .brand-logo {
+    font-size: 1.8rem;
+  }
 }

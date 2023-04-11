@@ -151,7 +151,7 @@ textarea {
 
 .feature-section {
   max-width: 130rem;
-  margin: 2rem auto 10rem auto;
+  margin: 2rem 10rem 10rem 8rem;
 }
 
 .feature-box-1 {
@@ -230,13 +230,10 @@ textarea {
 }
 
 /* media query */
-
-@media (max-width: 768px) {
-  /* Navigation */
+@media only screen and (max-width: 768px) {
   nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
+    padding: 2rem;
+    font-size: 1.1rem;
   }
 
   .nav-list {
@@ -244,36 +241,114 @@ textarea {
   }
 
   .brand-logo {
-    padding: 0;
+    font-size: 1.8rem;
   }
 
-  /* Forms */
   .container-cta {
-    grid-template-columns: 1fr;
-    margin: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    max-width: 120rem;
+    margin: 3rem;
   }
 
   .cta-img-box {
-    display: none;
+    background-image: linear-gradient(
+        rgba(145, 122, 96, 0.4),
+        rgba(98, 92, 85, 0.4)
+      ),
+      url("img/forms.jpg");
+    background-size: cover;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 50vh;
   }
 
-  /* Who We Are */
-  .feature-section {
-    margin: 2rem 2rem 10rem 2rem;
+  .cta-text-box {
+    padding: 3rem 2rem;
+    color: #333;
+  }
+
+  .cta-heading {
+    font-size: 3.2rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .cta-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .cta-form label {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .cta-form input,
+  .cta-form select,
+  textarea {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.4rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 6px;
+  }
+
+  .cta-form input::placeholder {
+    color: #aaa;
+  }
+
+  .cta-btn {
+    border: none;
+    background-color: #4e8397;
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #fff4e6;
+    align-self: center;
+    padding: 1rem 0;
   }
 
   .feature-box-1 {
-    grid-template-columns: 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 8rem;
   }
 
-  .heading-2,
-  .heading-3 {
-    font-size: 3rem;
+  .number-heading {
+    font-size: 5rem;
+  }
+
+  .heading-2 {
+    font-size: 2.8rem;
+    margin-top: 2rem;
+  }
+
+  .brand-in-title {
+    font-size: 2.8rem;
   }
 
   .feature-text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .icon-heading {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    margin-bottom: 1rem;
   }
 }

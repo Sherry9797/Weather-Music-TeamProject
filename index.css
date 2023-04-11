@@ -24,7 +24,7 @@ html {
       rgba(35, 34, 34, 0.4)
     ),
     url(img/rainy.jpg);
-  height: 100vh;
+  height: 95vh;
   background-size: cover;
   background-position: center;
 }
@@ -76,7 +76,7 @@ nav {
 .weather-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 20rem;
+  column-gap: 15rem;
   position: relative;
 }
 .main-weather-section {
@@ -88,7 +88,7 @@ nav {
   margin-top: 10rem;
 }
 .temp {
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: 300;
 }
 .weather-icon {
@@ -430,7 +430,7 @@ footer {
 }
 
 .feature-big-title {
-  margin-top: 6rem;
+  margin-top: 8rem;
   margin-bottom: 7rem;
   margin-left: 4rem;
 }
