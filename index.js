@@ -131,7 +131,7 @@ if (navigator.geolocation) {
 } else {
   alert("You selected not to shjare your location");
 }
-
+let backgroundIM = document.getElementsByClassName("hero-section")[0];
 function displayPosition(p) {
   console.log(p.coords.latitude);
   console.log(p.coords.longitude);
@@ -145,9 +145,14 @@ function displayPosition(p) {
       )
         .then((res) => res.json())
         .then((data) => {
+          console.log(data);
           OttawaIMG.setAttribute("src", data.current.condition.icon);
           OttawaTemp.innerText = data.current.temp_c + " °C";
           OttawaMainWeather.innerText = data.current.condition.text;
+          backgroundIM.setAttribute(
+            "style",
+            `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(${data.current.condition.icon});`
+          );
         });
     });
 }
