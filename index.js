@@ -121,7 +121,6 @@ fillDate(CalgaryName, CalgaryTemp, CalgaryWeather, CalgaryWeatherDetails);
 // Change the infor from the top where its says Ottawa
 
 //Get the location of the user
-
 OttawaIMG = document.getElementsByClassName("weather-pic")[0];
 OttawaTemp = document.getElementById("Ottawatemp2");
 OttawaMainWeather = document.getElementById("main-weather2");
@@ -129,7 +128,7 @@ let currentCityName = document.getElementsByClassName("main-city")[0];
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(displayPosition);
 } else {
-  alert("You selected not to shjare your location");
+  alert("You selected not to share your location");
 }
 let backgroundIM = document.getElementsByClassName("hero-section")[0];
 function displayPosition(p) {
@@ -161,8 +160,6 @@ function displayPosition(p) {
               `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/11967-NO0X1W.jpg);`
             );
           } else if (
-            conditionTextArray.includes("rain") ||
-            conditionTextArray.includes("rainy") ||
             conditionTextArray.includes("cloud") ||
             conditionTextArray.includes("cloudy") ||
             conditionTextArray.includes("overcast")
@@ -179,6 +176,14 @@ function displayPosition(p) {
             backgroundIM.setAttribute(
               "style",
               `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/snowiinng.jpeg);`
+            );
+          } else if (
+            conditionTextArray.includes("rain") ||
+            conditionTextArray.includes("rainy")
+          ) {
+            backgroundIM.setAttribute(
+              "style",
+              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(img/rainy.jpg);`
             );
           }
         });
