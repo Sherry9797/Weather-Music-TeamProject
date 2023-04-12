@@ -149,10 +149,38 @@ function displayPosition(p) {
           OttawaIMG.setAttribute("src", data.current.condition.icon);
           OttawaTemp.innerText = data.current.temp_c + " °C";
           OttawaMainWeather.innerText = data.current.condition.text;
-          backgroundIM.setAttribute(
-            "style",
-            `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(${data.current.condition.icon});`
-          );
+          let conditionText = data.current.condition.text.toLowerCase();
+          let conditionTextArray = conditionText.split(" ");
+          console.log(conditionTextArray);
+          if (
+            conditionTextArray.includes("sunny") ||
+            conditionTextArray.includes("sun")
+          ) {
+            backgroundIM.setAttribute(
+              "style",
+              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/11967-NO0X1W.jpg);`
+            );
+          } else if (
+            conditionTextArray.includes("rain") ||
+            conditionTextArray.includes("rainy") ||
+            conditionTextArray.includes("cloud") ||
+            conditionTextArray.includes("cloudy") ||
+            conditionTextArray.includes("overcast")
+          ) {
+            backgroundIM.setAttribute(
+              "style",
+              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/gloud.jpeg);`
+            );
+          } else if (
+            conditionTextArray.includes("snow") ||
+            conditionTextArray.includes("snowy") ||
+            conditionTextArray.includes("snowing")
+          ) {
+            backgroundIM.setAttribute(
+              "style",
+              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/snowiinng.jpeg);`
+            );
+          }
         });
     });
 }
