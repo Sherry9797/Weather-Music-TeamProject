@@ -1,4 +1,5 @@
-/* the page is mainly authored by victor, and Lang Gui did some style updating to fit the style theme */
+/* the page is mainly authored by victor, and 
+Lang Gui did some style updating to fit the style theme and media query*/
 
 body {
   display: flex;
@@ -151,7 +152,7 @@ input {
   border-radius: 6px;
 }
 
-/* media query */
+/* media query  by Lang Gui*/
 @media only screen and (max-width: 768px) {
   nav {
     padding: 2rem;

@@ -157,7 +157,7 @@ function displayPosition(p) {
           ) {
             backgroundIM.setAttribute(
               "style",
-              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/11967-NO0X1W.jpg);`
+              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/sunny.jpg);`
             );
           } else if (
             conditionTextArray.includes("cloud") ||
@@ -166,7 +166,7 @@ function displayPosition(p) {
           ) {
             backgroundIM.setAttribute(
               "style",
-              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/gloud.jpeg);`
+              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/cloudy.jpg);`
             );
           } else if (
             conditionTextArray.includes("snow") ||
@@ -175,7 +175,7 @@ function displayPosition(p) {
           ) {
             backgroundIM.setAttribute(
               "style",
-              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/snowiinng.jpeg);`
+              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/snow.jpg);`
             );
           } else if (
             conditionTextArray.includes("rain") ||
@@ -183,7 +183,7 @@ function displayPosition(p) {
           ) {
             backgroundIM.setAttribute(
               "style",
-              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(img/rainy.jpg);`
+              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(backgroundimg/rainy.jpg);`
             );
           }
         });
