@@ -38,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       }
       alert(`Thank you for logging in, ${enteredUsername}!`)
+      window.location.replace('index.html')
     }
   })
 })
@@ -55,10 +56,10 @@ function getCookie (cookiename) {
 }
 
 // open in a popup window
-const $modal = document.getElementById('modal')
+// const $modal = document.getElementById('modal')
 
-const windowFeatures = 'height=500,width=500,top=' + (screen.height / 2 - 250) + ',left=' + (screen.width / 2 - 250)
+// const windowFeatures = 'height=500,width=500,top=' + (screen.height / 2 - 250) + ',left=' + (screen.width / 2 - 250)
 
-$modal.addEventListener('click', () => {
-  window.open('login.html', 'LoginWindow', windowFeatures)
-})
+// $modal.addEventListener('click', () => {
+//   window.open('login.html', 'LoginWindow', windowFeatures)
+// })
