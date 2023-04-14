@@ -108,8 +108,7 @@ nav {
   margin-left: 2rem;
 }
 .weather-pic {
-  min-width: 24rem;
-  min-height: 20rem;
+  width: 12rem;
 }
 
 /* side-weather section  Lang Gui */
