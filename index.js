@@ -185,6 +185,11 @@ function displayPosition(p) {
               "style",
               `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(img/rainy.jpg);`
             );
+          } else if (conditionTextArray.includes("clear")) {
+            backgroundIM.setAttribute(
+              "style",
+              `background-image: linear-gradient(rgba(36, 35, 35, 0.4), rgba(35, 34, 34, 0.4)), url(img/white-cloud-blue-sky.jpg);`
+            );
           }
         });
     });
