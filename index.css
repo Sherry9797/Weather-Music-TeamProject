@@ -1,6 +1,7 @@
-/* most of css of this page is authored by Lang Gui, except for the APi section, which is writen by Victor */
+/* most of css of this page is authored by Lang Gui, 
+except for the APi section, which is writen by Victor */
 
-/* global reset */
+/* global reset Lang Gui */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,6 @@ html {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
   color: #fff;
-  background-color: black;
 }
 
 .weather-app {
@@ -29,7 +29,7 @@ html {
   background-position: center;
 }
 
-/* navigation */
+/* navigation Lang Gui  */
 
 nav {
   display: flex;
@@ -72,7 +72,7 @@ nav {
   color: #fff;
 }
 
-/* main-weather */
+/* main-weather Lang Gui  */
 .weather-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -112,7 +112,7 @@ nav {
   min-height: 20rem;
 }
 
-/* side-weather section */
+/* side-weather section  Lang Gui */
 .side-weather-section {
   display: grid;
   row-gap: 2rem;
@@ -206,11 +206,11 @@ nav {
 }
 /* Victor part */
 
-footer {
+.active1 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: black;
+
   margin-bottom: 60px;
   height: 200px;
 }
@@ -230,7 +230,7 @@ footer {
 
 #welcome {
   text-align: left;
-  color: beige;
+  color: black;
   font-size: 30px;
   margin-left: 4rem;
   margin-bottom: 2rem;
@@ -268,7 +268,159 @@ footer {
   color: blueviolet;
 }
 
-/* media queries */
+/* Victor's code */
+.apiSectiionV {
+  margin-top: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+#city {
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 6px;
+  margin-left: 1rem;
+}
+
+#apiBTN {
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+
+  border: none;
+  background-color: #4e8397;
+
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff4e6;
+  width: 250px;
+  border-radius: 2rem;
+  padding: 1rem 0;
+}
+
+.music-section {
+  color: black;
+}
+
+.step {
+  font-size: 2.4rem;
+  padding: 1rem;
+}
+#apiBTN:hover {
+  background-color: #b39cd0;
+  color: white;
+}
+
+.weatherInfoSection {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: black;
+  width: 100%;
+}
+
+.weatherInfoSection p {
+  font-size: 20px;
+  margin: 0px 20px;
+}
+.parentPlayList1 {
+  text-align: left;
+}
+.parentPlayList2 {
+  display: flex;
+}
+
+/* feature title Lang Gui  */
+.heading-2 {
+  font-size: 4rem;
+
+  margin-top: 0;
+  position: relative;
+  color: black;
+}
+
+.small-title {
+  text-transform: uppercase;
+  color: #4e8397;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.feature-big-title {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+}
+
+.brand-in-title {
+  color: #4e8397;
+  font-weight: 500;
+  font-family: "Lobster", sans-serif;
+  font-size: larger;
+}
+
+/* footer */
+
+/* footer section Lang Gui  */
+
+.footer-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  color: #555;
+  font-size: 1.4rem;
+  justify-content: space-around;
+  /* border-top: 1px solid #ddd; */
+  padding: 4rem 18rem;
+  background-color: #fff4e6;
+}
+
+.social-media {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.social-media-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #777;
+  margin-right: 2rem;
+  margin-bottom: 6rem;
+}
+
+.nav-footer {
+  list-style: none;
+}
+.nav-footer > li {
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  color: #555;
+  font-size: 1.4rem;
+}
+
+.contact-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.contact-info {
+  color: #555;
+  font-size: 1.4rem;
+}
+
+.contact-us {
+  margin-top: 1rem;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: #555;
+}
+
+/* media queries  Lang Gui */
 
 /* below  */
 @media only screen and (max-width: 768px) {
@@ -347,98 +499,4 @@ footer {
   nav {
     padding: 5rem 12rem;
   }
-}
-/* Victor's code */
-.apiSectiionV {
-  margin-top: 4rem;
-  margin-left: 4rem;
-  margin-bottom: 4rem;
-}
-#city {
-  padding: 1rem;
-  font-size: 2rem;
-  border-radius: 6px;
-  margin-left: 1rem;
-}
-
-#apiBTN {
-  font-size: 18px;
-  width: 150px;
-  height: 40px;
-  cursor: pointer;
-
-  border: none;
-  background-color: #4e8397;
-
-  font-weight: 500;
-  border-radius: 4px;
-  cursor: pointer;
-  color: #fff4e6;
-  width: 250px;
-  border-radius: 2rem;
-  padding: 1rem 0;
-}
-
-.music-section {
-  color: beige;
-  background-color: black;
-}
-
-.step {
-  font-size: 2.4rem;
-  padding: 1rem;
-}
-#apiBTN:hover {
-  background-color: #b39cd0;
-  color: white;
-}
-
-.weatherInfoSection {
-  margin-top: 40px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  background-color: black;
-  width: 100%;
-}
-
-.weatherInfoSection p {
-  font-size: 20px;
-  margin: 0px 20px;
-}
-.parentPlayList1 {
-  text-align: left;
-}
-.parentPlayList2 {
-  display: flex;
-}
-
-/* feature title */
-.heading-2 {
-  font-size: 4rem;
-
-  margin-top: 0;
-  position: relative;
-  color: beige;
-}
-
-.small-title {
-  text-transform: uppercase;
-  color: #4e8397;
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-
-.feature-big-title {
-  margin-top: 8rem;
-  margin-bottom: 7rem;
-  margin-left: 4rem;
-}
-
-.brand-in-title {
-  color: #4e8397;
-  font-weight: 500;
-  font-family: "Lobster", sans-serif;
-  font-size: larger;
 }
